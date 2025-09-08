@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body class="bg-base-100 text-gray-800 font-sans">
     <!-- Navbar -->
     <nav class="navbar bg-green-700 text-white px-8 py-4 shadow-md">
@@ -23,30 +25,38 @@
         </div>
 
         <div class="navbar-end">
-            <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none text-green-600 font-semibold rounded-full">Plant a Tree</button>
+            <button
+                class="btn bg-yellow-400 hover:bg-yellow-500 border-none text-green-600 font-semibold rounded-full">Plant
+                a Tree</button>
         </div>
     </nav>
 
-<!-- Hero-section -->
-<section class="relative min-h-[480px] bg-[#E6FAE6] flex items-center justify-center overflow-hidden px-6 md:px-0">
-       <img src="./assets/hero-leaf1.png" alt="" class="absolute left-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
+    <!-- Hero-section -->
+    <section class="relative min-h-[480px] bg-[#E6FAE6] flex items-center justify-center overflow-hidden px-6 md:px-0">
+        <img src="./assets/hero-leaf1.png" alt=""
+            class="absolute left-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
 
-     <img src="./assets/hero-leaf2.png" alt="" class="absolute right-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
+        <img src="./assets/hero-leaf2.png" alt=""
+            class="absolute right-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
 
-    <div class="relative z-20 text-center text-white max-w-2xl">
-        <h1 class="mb-6 text-5xl md:text-5xl text-[#1F2937] font-bold leading-tight">Plant a Tree, Grow a Future</h1>
-        <p class="mb-6 text-lg md:text-xl text-black">Join our movement to plant trees, restore nature, and grow a better future for all.</p>
-          <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none rounded-full px-8 text-lg text-green-600 font-semibold">Get Involved</button>
-    </div>
-</section>
+        <div class="relative z-20 text-center text-white max-w-2xl">
+            <h1 class="mb-6 text-5xl md:text-5xl text-[#1F2937] font-bold leading-tight">Plant a Tree, Grow a Future
+            </h1>
+            <p class="mb-6 text-lg md:text-xl text-black">Join our movement to plant trees, restore nature, and grow a
+                better future for all.</p>
+            <button
+                class="btn bg-yellow-400 hover:bg-yellow-500 border-none rounded-full px-8 text-lg text-green-600 font-semibold">Get
+                Involved</button>
+        </div>
+    </section>
 
- <!-- Main Section -->
-        <main class="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-4 gap-10 bg-[#f0fdf4]">
-   <aside>
-     <h2 class="text-xl font-bold mb-5">Categories</h2>
+    <!-- Main Section -->
+    <main class="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-4 gap-10 bg-[#f0fdf4]">
+        <aside>
+            <h2 class="text-xl font-bold mb-5">Categories</h2>
             <div id="categories" class="flex flex-col gap-3"></div>
         </aside>
-<section class="md:col-span-2">
+        <section class="md:col-span-2">
             <h2 class="text-3xl font-bold mb-8 text-center">Choose Your Trees</h2>
             <div id="plants-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
             <div id="loading" class="flex justify-center my-8 hidden">
@@ -54,18 +64,34 @@
             </div>
         </section>
 
-         <aside class="bg-green-50 p-5 rounded-xl shadow-lg border">
+        <aside class="bg-white p-5 rounded-xl shadow-lg border">
             <h2 class="text-xl font-bold mb-4">Your Cart</h2>
             <ul id="cart-list" class="space-y-2"></ul>
             <div class="divider"></div>
             <p class="font-bold text-lg">Total: $<span id="cart-total">0</span></p>
         </aside>
- </main>   
+    </main>
 
- 
-          
+    <!-- About Section -->
+    <section class="bg-green-50 py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+            <img class="w-full md:w-1/2 rounded-xl shadow-lg object-cover" src="./assets/about.png" alt="">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">About the Campaing</h2>
+                <p class="text-gray-600 leading-relaxed text-lg">Green Earth is a global tree plantation initiative
+                    dedicated to fighting climate change by planting trees worldwide.
+                    Our mission is to restore ecosystems, create green jobs, and combat global warming.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
     <script src="./script.js"> </script>
 
 
 </body>
+
 </html>
