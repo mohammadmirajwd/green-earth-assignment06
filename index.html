@@ -37,10 +37,33 @@
         <h1 class="mb-6 text-5xl md:text-5xl text-[#1F2937] font-bold leading-tight">Plant a Tree, Grow a Future</h1>
         <p class="mb-6 text-lg md:text-xl text-black">Join our movement to plant trees, restore nature, and grow a better future for all.</p>
           <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none rounded-full px-8 text-lg text-green-600 font-semibold">Get Involved</button>
-          
-
     </div>
 </section>
+
+ <!-- Main Section -->
+        <main class="container mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-4 gap-10 bg-[#f0fdf4]">
+   <aside>
+     <h2 class="text-xl font-bold mb-5">Categories</h2>
+            <div id="categories" class="flex flex-col gap-3"></div>
+        </aside>
+<section class="md:col-span-2">
+            <h2 class="text-3xl font-bold mb-8 text-center">Choose Your Trees</h2>
+            <div id="plants-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <div id="loading" class="flex justify-center my-8 hidden">
+                <span class="loading loading-spinner loading-lg text-success"></span>
+            </div>
+        </section>
+
+         <aside class="bg-green-50 p-5 rounded-xl shadow-lg border">
+            <h2 class="text-xl font-bold mb-4">Your Cart</h2>
+            <ul id="cart-list" class="space-y-2"></ul>
+            <div class="divider"></div>
+            <p class="font-bold text-lg">Total: $<span id="cart-total">0</span></p>
+        </aside>
+ </main>   
+
+ 
+          
     <script src="./script.js"> </script>
 
 
