@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="bg-base-100 text-gray-800 font-sans">
-    
+    <!-- Navbar -->
     <nav class="navbar bg-green-700 text-white px-8 py-4 shadow-md">
         <div class="navbar-start">
             <a class="btn btn-ghost text-2xl tracking-wide font-bold">Green Earth</a>
@@ -23,11 +23,26 @@
         </div>
 
         <div class="navbar-end">
-            <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none text-black font-semibold rounded-[50px]">Plant a Tree</button>
+            <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none text-green-600 font-semibold rounded-full">Plant a Tree</button>
         </div>
     </nav>
 
+<!-- Hero-section -->
+<section class="relative min-h-[480px] bg-[#E6FAE6] flex items-center justify-center overflow-hidden px-6 md:px-0">
+       <img src="./assets/hero-leaf1.png" alt="" class="absolute left-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
+
+     <img src="./assets/hero-leaf2.png" alt="" class="absolute right-0 bottom-0 h-auto w-[250px] md:w-[350px] lg:w-[450px] object-contain z-10 opacity-70 md:opacity-100">
+
+    <div class="relative z-20 text-center text-white max-w-2xl">
+        <h1 class="mb-6 text-5xl md:text-5xl text-[#1F2937] font-bold leading-tight">Plant a Tree, Grow a Future</h1>
+        <p class="mb-6 text-lg md:text-xl text-black">Join our movement to plant trees, restore nature, and grow a better future for all.</p>
+          <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none rounded-full px-8 text-lg text-green-600 font-semibold">Get Involved</button>
+          
+
+    </div>
+</section>
     <script src="./script.js"> </script>
+
 
 </body>
 </html>
